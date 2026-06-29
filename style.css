@@ -1,65 +1,115 @@
-/* 1. Global Page Layout Styles */
+/* Custom CSS Styling File */
+
+/* Complex Rule 1: Root variables and body layout */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --text-color: #333333;
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.65;
+    color: var(--text-color);
+    background-color: var(--bg-color);
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
 }
 
-/* 2. Container Constraints */
+/* Complex Rule 2: Page wrapper and layout structure */
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    padding: 20px;
-    background: #ffffff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 5px;
-    margin-top: 20px;
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
 }
 
-/* 3. Header and Section Layout Elements */
-h1, h2, h3 {
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 5px;
+/* Complex Rule 3: Main headings and design hierarchy */
+h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 12px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
-/* 4. Navigation Menu Links */
+h2 {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Complex Rule 4: Navigation menu rules */
 .nav-links {
-    margin: 15px 0;
-    padding: 10px;
-    background: #2c3e50;
-    border-radius: 4px;
+    display: flex;
+    gap: 20px;
+    background-color: var(--primary-color);
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-bottom: 35px;
 }
 
 .nav-links a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    margin-right: 15px;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease-in-out;
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+    color: var(--accent-color);
 }
 
-/* 5. Exercises Lists and Links */
+/* Complex Rule 5: User Image Layout Frame */
+.profile-frame {
+    max-width: 400px;
+    margin: 20px 0;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Complex Rule 6: List spacing and structural sections */
+section {
+    margin-bottom: 40px;
+}
+
 ul {
     padding-left: 20px;
+    margin-bottom: 25px;
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    padding-left: 5px;
 }
 
-/* 6. Images Layout Frame */
-.profile-frame, .cert-image {
-    border: 2px solid #ddd;
-    padding: 5px;
+strong {
+    color: var(--primary-color);
+}
+
+.cert-image {
+    margin: 25px auto;
+    padding: 10px;
     background: #fff;
-    margin-bottom: 15px;
-    max-width: 250px;
+    border-radius: 6px;
+    max-width: 620px;
 }
