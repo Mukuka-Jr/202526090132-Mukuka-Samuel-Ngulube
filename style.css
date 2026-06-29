@@ -1,0 +1,65 @@
+/* 1. Global Page Layout Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* 2. Container Constraints */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* 3. Header and Section Layout Elements */
+h1, h2, h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+/* 4. Navigation Menu Links */
+.nav-links {
+    margin: 15px 0;
+    padding: 10px;
+    background: #2c3e50;
+    border-radius: 4px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* 5. Exercises Lists and Links */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* 6. Images Layout Frame */
+.profile-frame, .cert-image {
+    border: 2px solid #ddd;
+    padding: 5px;
+    background: #fff;
+    margin-bottom: 15px;
+    max-width: 250px;
+}
